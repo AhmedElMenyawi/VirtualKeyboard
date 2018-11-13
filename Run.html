@@ -1,0 +1,2904 @@
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Virtual_Keyboard</title>
+          
+    <style type="text/css">
+        
+   #left_circle {
+     margin-left: 0.5%;
+        border-style: solid;
+       border-width: 2px;
+    }
+
+    input {
+     width:  71%;
+     box-sizing: border-box;
+     border: 2px solid black;
+     border-radius: 4px;
+     font-size: 16px;
+     background-color: white;
+     padding: 19px 20px 18px;
+     margin-top: 30px;
+   }
+        
+    #wrap{
+            width: 100%;
+            height: 650px;
+        }
+        
+   .first-level-container {
+       width: 71.7%;
+       padding-top: 7.6%;
+        padding-bottom: 7%;
+       height: auto;
+       float: left;
+       
+   }
+        
+    .widgets-container-circle {
+     width: 30%;
+     padding:11% 0;
+     height: auto;
+     border-radius: 50%;
+     background: #4679BD;
+     float:left;
+     display:table;
+     margin-left: 1.9%;
+     margin-top: 3%;
+     position: relative;
+     text-align:center;  
+        z-index:9999;
+        }
+        
+    .letter1 {
+          text-align:center;
+          display:table-cell;
+          vertical-align:middle;
+          font-size: 26px;
+        }
+   
+    .widgets-container {
+            height: 100%;
+            width: 28%;
+            float: right;
+            background: #FFFFFF;
+            border:2px solid black;
+            border-radius: 8%;
+            border-color: black;
+        
+        }
+
+   .first-level-circle {
+     width: 32.25%;
+     padding-top: 32.25%;
+     height: auto;
+     position: relative;
+     border-radius: 50%;
+      
+     background: #4679BD;
+     margin-right: 0.05%;
+     margin-top: 50px;
+     display: inline-block;
+   }
+        
+   #Suggestions-circle {
+            width: 99%;
+            height: 250px;
+            margin-left: 0.5%;  
+       margin-top: 10%;
+       
+        }
+   
+   .suggestions {
+            border-radius: 15px; 
+            width: 70%;
+            height: 35px; 
+            
+            margin-left: 54px;
+            margin-bottom: 9px;
+            bottom: 50px;
+            background: #72D6EC;
+            text-align: center;
+            position: relative;
+            
+        }
+        
+    .letter2{
+            font-size: 25px; 
+            font-weight: bold;
+            opacity: 1;
+        }
+        
+   .third-level-container {
+     width: 100%;
+     height: 100%;
+     padding-top: 10px;
+   }
+
+   .third-level-circle {
+     width: 36%;
+     height: auto;
+    position: absolute;
+     border-radius: 50%;
+     background: #72D6EC;
+     text-align: center;
+       
+   }
+
+   .third-level-left-circle {
+     top: 34%; 
+     left: 2.9%;
+   }
+
+   .third-level-right-circle {
+     top: 34%;
+     left: 61.5%;
+   }
+
+   .third-level-upper-circle {
+     top: 3.6%;
+     left: 31.5%;
+   }
+
+   .third-level-lower-circle {
+     top: 62.7%;
+     left: 31.5%;
+   }
+
+   .second-level-circle {
+     width: 38.5%;
+     padding-top: 36.5%;
+     height: auto;
+     position: absolute;
+     border-radius: 50%;
+     background: #505E8D;
+   }
+
+   .second-level-left-circle {
+     top: 30%;
+     left: 1.9%;
+   }
+
+   .second-level-right-circle {
+     top: 30%;
+     left: 59.5%;
+   }
+
+   .second-level-upper-circle {
+     top: 0.6%;
+     left: 30.5%;
+   }
+
+   .second-level-lower-circle {
+     top: 58.7%;
+     left: 30.5%;
+   }
+
+   .letter {
+     text-align: center;
+     font-size: 26px;
+   }
+
+    #welcome-text{
+            margin-top: -100px;    
+            font-weight: bold;
+            font-size: 200%;
+            font-family: "Arial Black", sans-serif;
+        }
+        
+    .line {
+        width: 27.8%;
+        height: 190px;
+        border-bottom: 2px solid black;
+        position: absolute;
+        margin-bottom:20px!important;
+        }
+        
+   #Suggestions-List{
+            position: relative;
+            top: 40px;
+            margin-left: 6px;
+            font-weight: bold;
+            font-size: 130%;
+            font-family: "Arial Black", sans-serif;
+            clear: both;
+        }
+    
+    #Space-circle
+        {
+            border-radius: 15px;
+    padding: 5px; 
+    width: 93%;
+    height: 0px; 
+        }
+        </style>
+      </head>
+    <body>
+          
+
+<div id="wrap">
+
+<div class="first-level-container"> 
+    
+     <p id="welcome-text">Welcome To Virtual Keyboard Based On EOG</p>
+    
+  <div class="first-level-circle" id="left_circle">
+      
+    <div class="second-level-circle second-level-left-circle" id="second-level-left-circle1">
+     
+<div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle4"><span class="letter" id="letter1-4">b</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle4"><span class="letter" id="letter2-4">c</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle4"><span class="letter" id="letter3-4">d</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle4"><span class="letter" id="letter4-4">a</span></div>
+      </div>
+
+    </div>
+    <div class="second-level-circle second-level-right-circle" id="second-level-right-circle1">
+      <div class="third-level-container">
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle2"><span class="letter" id="letter4-2">i</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle2"><span class="letter"id="letter2-2">k</span></div>
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle2"><span class="letter" id="letter1-2">j</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle2"><span class="letter"id="letter3-2">l</span></div>
+
+      </div>
+      </div>
+    <div class="second-level-circle second-level-upper-circle" id="second-level-upper-circle1">
+       <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle1"><span class="letter" id="letter1-1">f</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle1"><span class="letter" id="letter2-1">g</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle1"><span class="letter" id="letter3-1">h</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle1"><span class="letter" id="letter4-1">e</span></div>
+      </div>
+    </div>
+    <div class="second-level-circle second-level-lower-circle" id="second-level-lower-circle1">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle3"><span class="letter" id="letter1-3">n</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle3"><span class="letter" id="letter2-3">o</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle3"><span class="letter" id="letter3-3">p</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle3"><span class="letter" id="letter4-3">m</span></div>
+      </div>
+      </div>
+  
+    </div>
+
+  <div class="first-level-circle" id="middle_circle">
+      
+    <div class="second-level-circle second-level-left-circle" id="second-level-left-circle2">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle8"><span class="letter" id="letter1-8">r</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle8"><span class="letter" id="letter2-8">s</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle8"><span class="letter" id="letter3-8">t</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle8"><span class="letter" id="letter4-8">q</span></div>
+      </div>
+      </div>
+    <div class="second-level-circle second-level-right-circle" id="second-level-right-circle2">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle6"><span class="letter" id="letter1-6">z</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle6"><span class="letter" id="letter2-6">'</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle6"><span class="letter" id="letter3-6">@</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle6"><span class="letter"id="letter4-6">y</span></div>
+      </div></div>
+    <div class="second-level-circle second-level-upper-circle" id="second-level-upper-circle2">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle5"><span class="letter" id="letter1-5">v</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle5"><span class="letter" id="letter2-5">w</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle5"><span class="letter" id="letter3-5">x</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle5"><span class="letter" id="letter4-5">u</span></div>
+      </div></div>
+    <div class="second-level-circle second-level-lower-circle" id="second-level-lower-circle2">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle7"><span class="letter" id="letter1-7">;</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle7"><span class="letter" id="letter2-7">)</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle7"><span class="letter" id="letter3-7">!</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle7"><span class="letter" id="letter4-7">(</span></div>
+      </div></div>
+  </div>
+
+  <div class="first-level-circle" id="right_circle">
+      
+    <div class="second-level-circle second-level-left-circle" id="second-level-left-circle3">
+        
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle12"><span class="letter" id="letter1-12">1</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle12"><span class="letter" id="letter2-12">2</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle12"><span class="letter" id="letter3-12">3</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle12"><span class="letter" id="letter4-12">0</span></div>
+      </div>
+      </div>
+    <div class="second-level-circle second-level-right-circle" id="second-level-right-circle3">
+        
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle10"><span class="letter"  id="letter1-10">9</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle10"><span class="letter" id="letter2-10">+</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle10"><span class="letter" id="letter3-10">-</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle10"><span class="letter" id="letter4-10">8</span></div>
+      </div>
+      
+      </div>
+    <div class="second-level-circle second-level-upper-circle" id="second-level-upper-circle3">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle9"><span class="letter" id="letter1-9">5</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle9"><span class="letter" id="letter2-9">6</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle9"><span class="letter" id="letter3-9">7</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle9"><span class="letter" id="letter4-9">4</span></div>
+      </div></div>
+    <div class="second-level-circle second-level-lower-circle" id="second-level-lower-circle3">
+      <div class="third-level-container">
+        
+        <div class="third-level-circle third-level-upper-circle" id="third-level-upper-circle11"><span class="letter" id="letter1-11">?</span></div>
+        <div class="third-level-circle third-level-right-circle" id="third-level-right-circle11"><span class="letter" id="letter2-11">*</span></div>
+        <div class="third-level-circle third-level-lower-circle" id="third-level-lower-circle11"><span class="letter" id="letter3-11">#</span></div>
+        <div class="third-level-circle third-level-left-circle" id="third-level-left-circle11"><span class="letter" id="letter4-11">=</span></div>
+      </div></div>
+  </div>
+
+</div>
+    
+<div class="widgets-container">
+    
+    
+    <div class="widgets-container-circle" id="back-circle"><span class="letter1">Back</span></div>
+    <div class="widgets-container-circle" id="delete-circle"><span class="letter1">Delete</span></div>
+    <div class="widgets-container-circle" id="capslock-circle"><span class="letter1">CapsLk</span></div>
+    <div class="widgets-container-circle" id="Space-circle"><span class="letter1">Space</span></div>
+    <div class="line"></div>
+        <div id="Suggestions-List"> Words Suggestions List </div>
+    <div class="first-level-circle" id="Suggestions-circle">
+    
+    <div class="suggestions" id="word1"><span class="letter2" id="word1text" ></span></div>
+    <div class="suggestions" id="word2"><span class="letter2" id="word2text" ></span></div>
+    <div class="suggestions" id="word3"><span class="letter2" id="word3text" ></span></div>
+    <div class="suggestions" id="word4"><span class="letter2" id="word4text" ></span></div>
+    <div class="suggestions" id="word5"><span class="letter2" id="word5text" ></span></div>
+     
+        
+    </div>
+
+    
+    
+    </div>
+
+<input type="text" id="fname" name="fname" placeholder="Type Here .. " >
+    
+</div>
+        
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="JQuery/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript">
+
+var CapsLock = true ; 
+var Scene = 1 ; 
+var ToBeClicked = 0 ;
+$(".second-level-circle").css("pointer-events","none");
+               
+$(".third-level-circle").css("pointer-events","none");
+             
+
+// First Level
+$("#middle_circle").on("click", function() {
+    
+    Scene = 3 ; 
+    ToBeClicked = 0 ;
+    $("#middle_circle").css("border-style","none");
+    $("#middle_circle").css("border-width","0px"); 
+    $("#left_circle").css("pointer-events","none");
+    $("#left_circle").css({ opacity: 0 }, 1000);
+    $("#middle_circle").css({ opacity: 0 }, 1000);
+    $("#middle_circle").css("pointer-events","none");
+    $("#right_circle").css({ opacity: 0 }, 1000);
+    $("#right_circle").css("pointer-events","none");
+    
+    $("#second-level-lower-circle2").css({ opacity: 0 });
+    $("#second-level-upper-circle2").css({ opacity: 0 });
+    $("#second-level-left-circle2").css({ opacity: 0 });
+    $("#second-level-right-circle2").css({ opacity: 0 });
+    
+    $("#second-level-lower-circle2").css("pointer-events","auto");
+    $("#second-level-right-circle2").css("pointer-events","auto");
+    $("#second-level-upper-circle2").css("pointer-events","auto");
+    $("#second-level-left-circle2").css("pointer-events","auto");
+    
+    $("#second-level-right-circle2").css({transition: 'all ease 1s'});
+    $("#second-level-left-circle2").css({transition: 'all ease 1s'});
+    $("#second-level-upper-circle2").css({transition: 'all ease 1s'});
+    $("#second-level-lower-circle2").css({transition: 'all ease 1s'});
+    
+    $("#second-level-right-circle2").css({position: "absolute"}).css({left: '231px' , top: '55px'}, 1000);
+    $("#second-level-left-circle2").css({position: "absolute"}).css({left: '-151px' , top: '55px'}, 1000);
+    $("#second-level-upper-circle2").css({position: "absolute"}).css({top: '-70px' , left: '40px' }, 1000);
+    $("#second-level-lower-circle2").css({position: "absolute"}).css({ top : '180px' , left: '40px' }, 1000);   
+    
+    $("#second-level-upper-circle2").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-right-circle2").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-lower-circle2").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-left-circle2").css({paddingTop : '68%' , width : '70%'},1000);    
+    
+    $(".letter").css({fontSize: '50px' },1000);
+    //NOW
+    
+    $("#letter1-5").css({position: "absolute"}).css({left: '25.5px' , top: '26px'});
+    $("#letter2-5").css({position: "absolute"}).css({left: '22.5px' , top: '27.5px'});
+    $("#letter3-5").css({position: "absolute"}).css({left: '25.5px' , top: '28px'});
+    $("#letter4-5").css({position: "absolute"}).css({left: '25.5px' , top: '27.5px'});
+    
+    $("#letter1-6").css({position: "absolute"}).css({left: '27px' , top: '26px'});
+    $("#letter2-6").css({position: "absolute"}).css({left: '34px' , top: '37px'});
+    $("#letter3-6").css({position: "absolute"}).css({left: '16px' , top: '27px'});
+    $("#letter4-6").css({position: "absolute"}).css({left: '27.5px' , top: '25.5px'});
+    
+    $("#letter1-7").css({position: "absolute"}).css({left: '32px' , top: '23px'});
+    $("#letter2-7").css({position: "absolute"}).css({left: '32.5px' , top: '27.5px'});
+    $("#letter3-7").css({position: "absolute"}).css({left: '30px' , top: '30px'});
+    $("#letter4-7").css({position: "absolute"}).css({left: '27.5px' , top: '27.5px'});
+    
+    $("#letter1-8").css({position: "absolute"}).css({left: '31px' , top: '25px'});
+    $("#letter2-8").css({position: "absolute"}).css({left: '30px' , top: '27.5px'});
+    $("#letter3-8").css({position: "absolute"}).css({left: '31px' , top: '30px'});
+    $("#letter4-8").css({position: "absolute"}).css({left: '25px' , top: '25px'});
+    
+    $(".third-level-circle").css({ width : '36%' , paddingTop : '15%'},1000);
+    
+    $("#second-level-left-circle2").css("border-style","solid");
+    $("#second-level-left-circle2").css("border-width","2px");
+    
+    $("#middle_circle").css('background-color', 'white');
+    
+    $("#second-level-lower-circle2").animate({ opacity: 1 }, 1500);
+    $("#second-level-upper-circle2").animate({ opacity: 1 }, 1500);
+    $("#second-level-left-circle2").animate({ opacity: 1 }, 1500);
+    $("#second-level-right-circle2").animate({ opacity: 1 }, 1500);
+    $("#middle_circle").animate({ opacity: 1 }, 1500);
+    
+   });             
+                   
+$("#left_circle").on("click", function() {
+    Scene = 2 ; 
+    ToBeClicked = 0 ;
+    
+    $("#left_circle").css("border-style","none");
+    $("#left_circle").css("border-width","0px"); 
+    $("#middle_circle").css("pointer-events","none");
+    $("#middle_circle").css({ opacity: 0 }, 1000);
+    $("#left_circle").css({ opacity: 0 }, 1000);
+    $("#left_circle").css("pointer-events","none");
+    $("#right_circle").css({ opacity: 0 }, 1000);
+    $("#right_circle").css("pointer-events","none");
+    
+    $("#second-level-lower-circle1").css({ opacity: 0 });
+    $("#second-level-upper-circle1").css({ opacity: 0 });
+    $("#second-level-left-circle1").css({ opacity: 0 });
+    $("#second-level-right-circle1").css({ opacity: 0 });
+    
+    $("#second-level-lower-circle1").css("pointer-events","auto");
+    $("#second-level-right-circle1").css("pointer-events","auto");
+    $("#second-level-upper-circle1").css("pointer-events","auto");
+    $("#second-level-left-circle1").css("pointer-events","auto");
+    
+    $("#second-level-right-circle1").css({transition: 'all ease 1s'});
+    $("#second-level-left-circle1").css({transition: 'all ease 1s'});
+    $("#second-level-upper-circle1").css({transition: 'all ease 1s'});
+    $("#second-level-lower-circle1").css({transition: 'all ease 1s'});
+    
+    $("#second-level-right-circle1").css({position: "absolute"}).css({left: '549px' , top: '55px'},1000);
+    $("#second-level-left-circle1").css({position: "absolute"}).css({left: '167px' , top: '55px'},1000);
+    $("#second-level-upper-circle1").css({position: "absolute"}).css({top: '-70px' , left: '360px' },1000);
+    $("#second-level-lower-circle1").css({position: "absolute"}).css({ top : '180px' , left: '360px' },1000);                
+    
+    $("#second-level-upper-circle1").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-right-circle1").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-lower-circle1").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-left-circle1").css({paddingTop : '68%' , width : '70%'},1000);    
+    
+    $(".letter").css({fontSize: '50px' },1000);
+    //NOW
+    
+    $("#letter1-1").css({position: "absolute"}).css({left: '27.5px' , top: '28px'});
+    $("#letter2-1").css({position: "absolute"}).css({left: '25.5px' , top: '25.5px'});
+    $("#letter3-1").css({position: "absolute"}).css({left: '27.5px' , top: '31px'});
+    $("#letter4-1").css({position: "absolute"}).css({left: '25.5px' , top: '27.5px'});
+    
+    $("#letter1-2").css({position: "absolute"}).css({left: '32px' , top: '26px'});
+    $("#letter2-2").css({position: "absolute"}).css({left: '30px' , top: '32px'});
+    $("#letter3-2").css({position: "absolute"}).css({left: '32px' , top: '27px'});
+    $("#letter4-2").css({position: "absolute"}).css({left: '32px' , top: '29.5px'});
+    
+    $("#letter1-3").css({position: "absolute"}).css({left: '27px' , top: '25px'});
+    $("#letter2-3").css({position: "absolute"}).css({left: '27px' , top: '27.5px'});
+    $("#letter3-3").css({position: "absolute"}).css({left: '27px' , top: '27px'});
+    $("#letter4-3").css({position: "absolute"}).css({left: '20px' , top: '27.5px'});
+    
+    $("#letter1-4").css({position: "absolute"}).css({left: '27px' , top: '29px'});
+    $("#letter2-4").css({position: "absolute"}).css({left: '28px' , top: '27.5px'});
+    $("#letter3-4").css({position: "absolute"}).css({left: '25px' , top: '30px'});
+    $("#letter4-4").css({position: "absolute"}).css({left: '28px' , top: '25px'});
+    
+    $(".third-level-circle").css({ width : '36%' , paddingTop : '15%'},1000);
+    
+    $("#second-level-left-circle1").css("border-style","solid");
+    $("#second-level-left-circle1").css("border-width","2px");
+    
+    $("#left_circle").css('background-color', 'white');
+    
+    $("#second-level-lower-circle1").animate({ opacity: 1 }, 1500);
+    $("#second-level-upper-circle1").animate({ opacity: 1 }, 1500);
+    $("#second-level-left-circle1").animate({ opacity: 1 }, 1500);
+    $("#second-level-right-circle1").animate({ opacity: 1 }, 1500);
+    $("#left_circle").animate({ opacity: 1 }, 1500);
+    /////////////
+});
+               
+$("#right_circle").on("click", function() {
+    Scene = 4 ; 
+    ToBeClicked = 0 ;
+    $("#right_circle").css("border-style","none");
+    $("#right_circle").css("border-width","0px"); 
+    $("#left_circle").css("pointer-events","none");
+    $("#left_circle").css({ opacity: 0 }, 1000);
+    $("#middle_circle").css({ opacity: 0 }, 1000);
+    $("#middle_circle").css("pointer-events","none");
+    $("#right_circle").css({ opacity: 0 }, 1000);
+    $("#right_circle").css("pointer-events","none");
+    
+    $("#second-level-lower-circle3").css({ opacity: 0 });
+    $("#second-level-upper-circle3").css({ opacity: 0 });
+    $("#second-level-left-circle3").css({ opacity: 0 });
+    $("#second-level-right-circle3").css({ opacity: 0 });
+    
+    $("#second-level-lower-circle3").css("pointer-events","auto");
+    $("#second-level-right-circle3").css("pointer-events","auto");
+    $("#second-level-upper-circle3").css("pointer-events","auto");
+    $("#second-level-left-circle3").css("pointer-events","auto");
+    
+    $("#second-level-right-circle3").css({transition: 'all ease 1s'});
+    $("#second-level-left-circle3").css({transition: 'all ease 1s'});
+    $("#second-level-upper-circle3").css({transition: 'all ease 1s'});
+    $("#second-level-lower-circle3").css({transition: 'all ease 1s'});
+    
+    $("#second-level-right-circle3").css({position: "absolute"}).css({left: '-84px' , top: '55px'}, 1000);
+    $("#second-level-left-circle3").css({position: "absolute"}).css({left: '-467px' , top: '55px'}, 1000);
+    $("#second-level-upper-circle3").css({position: "absolute"}).css({top: '-70px' , left: '-275px' }, 1000);
+    $("#second-level-lower-circle3").css({position: "absolute"}).css({ top : '180px' , left: '-275px' }, 1000);   
+    
+    $("#second-level-upper-circle3").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-right-circle3").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-lower-circle3").css({paddingTop : '68%' , width : '70%'},1000);
+    $("#second-level-left-circle3").css({paddingTop : '68%' , width : '70%'},1000);    
+    
+    $(".letter").css({fontSize: '46px' },1000);
+    $("#letter1-9").css({position: "absolute"}).css({left: '27.5px' , top: '28px'});
+    $("#letter2-9").css({position: "absolute"}).css({left: '25.5px' , top: '27px'});
+    $("#letter3-9").css({position: "absolute"}).css({left: '27.5px' , top: '31px'});
+    $("#letter4-9").css({position: "absolute"}).css({left: '25.5px' , top: '29px'});
+    
+    $("#letter1-10").css({position: "absolute"}).css({left: '27px' , top: '28px'});
+    $("#letter2-10").css({position: "absolute"}).css({left: '25px' , top: '32px'});
+    $("#letter3-10").css({position: "absolute"}).css({left: '32px' , top: '27px'});
+    $("#letter4-10").css({position: "absolute"}).css({left: '25px' , top: '29.5px'});
+    
+    $("#letter1-11").css({position: "absolute"}).css({left: '27px' , top: '29px'});
+    $("#letter2-11").css({position: "absolute"}).css({left: '27px' , top: '32px'});
+    $("#letter3-11").css({position: "absolute"}).css({left: '27px' , top: '27px'});
+    $("#letter4-11").css({position: "absolute"}).css({left: '25px' , top: '27.5px'});
+    
+    $("#letter1-12").css({position: "absolute"}).css({left: '27px' , top: '29px'});
+    $("#letter2-12").css({position: "absolute"}).css({left: '28px' , top: '27.5px'});
+    $("#letter3-12").css({position: "absolute"}).css({left: '27px' , top: '30px'});
+    $("#letter4-12").css({position: "absolute"}).css({left: '26px' , top: '27px'});
+    $(".third-level-circle").css({ width : '36%' , paddingTop : '15%'},1000);
+    
+    $("#second-level-left-circle3").css("border-style","solid");
+    $("#second-level-left-circle3").css("border-width","2px");
+    
+    $("#right_circle").css('background-color', 'white');
+    
+    $("#second-level-lower-circle3").animate({ opacity: 1 }, 1500);
+    $("#second-level-upper-circle3").animate({ opacity: 1 }, 1500);
+    $("#second-level-left-circle3").animate({ opacity: 1 }, 1500);
+    $("#second-level-right-circle3").animate({ opacity: 1 }, 1500);
+    $("#right_circle").animate({ opacity: 1 }, 1500);
+    });
+               
+// Second Level 
+    
+$("#second-level-lower-circle1").on("click",function(e){
+
+    Scene = 7 ;
+    ToBeClicked = 0 ;
+    $("#second-level-lower-circle1").css("border-style","none");
+    $("#second-level-lower-circle1").css("border-width","0px");
+    $("#second-level-right-circle1").css("pointer-events","none");
+    $("#second-level-left-circle1").css("pointer-events","none");
+    $("#second-level-upper-circle1").css("pointer-events","none");
+        
+    $("#second-level-lower-circle1").css({ opacity: 0 },10);
+    $("#second-level-right-circle1").css({ opacity: 0 },10);
+    $("#second-level-left-circle1").css({ opacity: 0 },10);
+    $("#second-level-upper-circle1").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle3").css("pointer-events","auto");
+    $("#third-level-lower-circle3").css("pointer-events","auto");
+    $("#third-level-left-circle3").css("pointer-events","auto");
+    $("#third-level-right-circle3").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle3").css({position: "absolute"}).css({left: '191px' , top: '-125px'});
+    $("#third-level-left-circle3").css({position: "absolute"}).css({left: '-192px' , top: '-125px'});
+    $("#third-level-upper-circle3").css({position: "absolute"}).css({top: '-250px' , left: '0px' });
+    $("#third-level-lower-circle3").css({position: "absolute"}).css({ top : '0px' , left: '0px' });                  
+    
+    $("#third-level-right-circle3").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle3").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle3").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle3").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-3").css({position: "absolute"}).css({left: '90px' , top: '90px'});
+    $("#letter2-3").css({position: "absolute"}).css({left: '85px' , top: '100px'});
+    $("#letter3-3").css({position: "absolute"}).css({left: '85px' , top: '95px'});
+    $("#letter4-3").css({position: "absolute"}).css({left: '75px' , top: '100px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle3").css("border-style","solid");
+    $("#third-level-left-circle3").css("border-width","2px");       
+    
+        $("#second-level-lower-circle1").css('background-color', 'white');
+    $("#third-level-upper-circle3").animate({ opacity: 1 });
+    $("#third-level-lower-circle3").animate({ opacity: 1 });
+    $("#third-level-left-circle3").animate({ opacity: 1 });
+    $("#third-level-right-circle3").animate({ opacity: 1 });
+    $("#second-level-lower-circle1").animate({ opacity: 1 });
+    },640);
+    e.stopPropagation();
+});
+
+$("#second-level-left-circle1").on("click",function(e){
+    
+    Scene = 8 ;
+    ToBeClicked = 0 ;
+    $("#second-level-left-circle1").css("border-style","none");
+    $("#second-level-left-circle1").css("border-width","0px");
+    $("#second-level-right-circle1").css("pointer-events","none");
+    $("#second-level-lower-circle1").css("pointer-events","none");
+    $("#second-level-upper-circle1").css("pointer-events","none");
+        
+    $("#second-level-lower-circle1").css({ opacity: 0 },10);
+    $("#second-level-right-circle1").css({ opacity: 0 },10);
+    $("#second-level-left-circle1").css({ opacity: 0 },10);
+    $("#second-level-upper-circle1").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle4").css("pointer-events","auto");
+    $("#third-level-lower-circle4").css("pointer-events","auto");
+    $("#third-level-left-circle4").css("pointer-events","auto");
+    $("#third-level-right-circle4").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle4").css({position: "absolute"}).css({left: '383px' , top: '0px'}, 1000);
+    $("#third-level-left-circle4").css({position: "absolute"}).css({left: '0px' , top: '0px'}, 1000);
+    $("#third-level-upper-circle4").css({position: "absolute"}).css({top: '-125px' , left: '192px' }, 1000);
+    $("#third-level-lower-circle4").css({position: "absolute"}).css({top: '125px' , left: '192px' }, 1000);                   
+    
+    $("#third-level-right-circle4").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle4").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle4").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle4").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-4").css({position: "absolute"}).css({left: '90px' , top: '95px'});
+    $("#letter2-4").css({position: "absolute"}).css({left: '90px' , top: '100px'});
+    $("#letter3-4").css({position: "absolute"}).css({left: '85px' , top: '110px'});
+    $("#letter4-4").css({position: "absolute"}).css({left: '80px' , top: '95px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle4").css("border-style","solid");
+    $("#third-level-left-circle4").css("border-width","2px");       
+    
+        $("#second-level-left-circle1").css('background-color', 'white');
+    $("#third-level-upper-circle4").animate({ opacity: 1 });
+    $("#third-level-lower-circle4").animate({ opacity: 1 });
+    $("#third-level-left-circle4").animate({ opacity: 1 });
+    $("#third-level-right-circle4").animate({ opacity: 1 });
+    $("#second-level-left-circle1").animate({ opacity: 1 });
+    },640);
+    e.stopPropagation();                 
+});
+    
+$("#second-level-upper-circle1").on("click",function(e){
+    
+     Scene = 5 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-upper-circle1").css("border-style","none");
+    $("#second-level-upper-circle1").css("border-width","0px");
+    $("#second-level-right-circle1").css("pointer-events","none");
+    $("#second-level-left-circle1").css("pointer-events","none");
+    $("#second-level-lower-circle1").css("pointer-events","none");
+        
+    $("#second-level-lower-circle1").css({ opacity: 0 },10);
+    $("#second-level-right-circle1").css({ opacity: 0 },10);
+    $("#second-level-left-circle1").css({ opacity: 0 },10);
+    $("#second-level-upper-circle1").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle1").css("pointer-events","auto");
+    $("#third-level-lower-circle1").css("pointer-events","auto");
+    $("#third-level-left-circle1").css("pointer-events","auto");
+    $("#third-level-right-circle1").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle1").css({position: "absolute"}).css({left: '190px' , top: '125px'}, 1000);
+    $("#third-level-left-circle1").css({position: "absolute"}).css({left: '-187px' , top: '125px'}, 1000);
+    $("#third-level-upper-circle1").css({position: "absolute"}).css({top: '0px' , left: '2px' }, 1000);
+    $("#third-level-lower-circle1").css({position: "absolute"}).css({ top : '250px' , left: '2px' }, 1000);                  
+    
+    $("#third-level-right-circle1").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle1").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle1").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle1").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-1").css({position: "absolute"}).css({left: '85px' , top: '100px'});
+    $("#letter2-1").css({position: "absolute"}).css({left: '85px' , top: '87.5px'});
+    $("#letter3-1").css({position: "absolute"}).css({left: '85px' , top: '100px'});
+    $("#letter4-1").css({position: "absolute"}).css({left: '85px' , top: '87.5px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle1").css("border-style","solid");
+    $("#third-level-left-circle1").css("border-width","2px");       
+    
+        $("#second-level-upper-circle1").css('background-color', 'white');
+    $("#third-level-upper-circle1").animate({ opacity: 1 });
+    $("#third-level-lower-circle1").animate({ opacity: 1 });
+    $("#third-level-left-circle1").animate({ opacity: 1 });
+    $("#third-level-right-circle1").animate({ opacity: 1 });
+    $("#second-level-upper-circle1").animate({ opacity: 1 });
+    },640);
+    ///////
+    e.stopPropagation();                               
+});
+    
+$("#second-level-right-circle1").on("click",function(e){
+     Scene = 6 ;
+    ToBeClicked = 0 ;
+    $("#second-level-right-circle1").css("border-style","none");
+    $("#second-level-right-circle1").css("border-width","0px");
+    $("#second-level-upper-circle1").css("pointer-events","none");
+    $("#second-level-left-circle1").css("pointer-events","none");
+    $("#second-level-lower-circle1").css("pointer-events","none");
+        
+    $("#second-level-lower-circle1").css({ opacity: 0 },10);
+    $("#second-level-right-circle1").css({ opacity: 0 },10);
+    $("#second-level-left-circle1").css({ opacity: 0 },10);
+    $("#second-level-upper-circle1").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle2").css("pointer-events","auto");
+    $("#third-level-lower-circle2").css("pointer-events","auto");
+    $("#third-level-left-circle2").css("pointer-events","auto");
+    $("#third-level-right-circle2").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle2").css({position: "absolute"}).css({left: '0px' , top: '-5px'}, 1000);
+    $("#third-level-left-circle2").css({position: "absolute"}).css({left: '-374px' , top: '-5px'}, 1000);
+    $("#third-level-upper-circle2").css({position: "absolute"}).css({top: '-130px' , left: '-188px' }, 1000);
+    $("#third-level-lower-circle2").css({position: "absolute"}).css({ top : '120px' , left: '-188px' }, 1000);                 
+    
+    $("#third-level-right-circle2").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle2").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle2").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle2").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-2").css({position: "absolute"}).css({left: '100px' , top: '86px'});
+    $("#letter2-2").css({position: "absolute"}).css({left: '90px' , top: '110px'});
+    $("#letter3-2").css({position: "absolute"}).css({left: '95px' , top: '100px'});
+    $("#letter4-2").css({position: "absolute"}).css({left: '95px' , top: '110px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle2").css("border-style","solid");
+    $("#third-level-left-circle2").css("border-width","2px");       
+    
+        $("#second-level-right-circle1").css('background-color', 'white');
+    $("#third-level-upper-circle2").animate({ opacity: 1 });
+    $("#third-level-lower-circle2").animate({ opacity: 1 });
+    $("#third-level-left-circle2").animate({ opacity: 1 });
+    $("#third-level-right-circle2").animate({ opacity: 1 });
+    $("#second-level-right-circle1").animate({ opacity: 1 });
+    },640);    
+    //////
+    e.stopPropagation();                              
+});
+//DONE    
+$("#second-level-lower-circle2").on("click",function(e){
+    Scene = 11 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-lower-circle2").css("border-style","none");
+    $("#second-level-lower-circle2").css("border-width","0px");
+    $("#second-level-right-circle2").css("pointer-events","none");
+    $("#second-level-left-circle2").css("pointer-events","none");
+    $("#second-level-upper-circle2").css("pointer-events","none");
+        
+    $("#second-level-lower-circle2").css({ opacity: 0 },10);
+    $("#second-level-right-circle2").css({ opacity: 0 },10);
+    $("#second-level-left-circle2").css({ opacity: 0 },10);
+    $("#second-level-upper-circle2").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle7").css("pointer-events","auto");
+    $("#third-level-lower-circle7").css("pointer-events","auto");
+    $("#third-level-left-circle7").css("pointer-events","auto");
+    $("#third-level-right-circle7").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle7").css({position: "absolute"}).css({left: '191px' , top: '-125px'});
+    $("#third-level-left-circle7").css({position: "absolute"}).css({left: '-192px' , top: '-125px'});
+    $("#third-level-upper-circle7").css({position: "absolute"}).css({top: '-250px' , left: '0px' });
+    $("#third-level-lower-circle7").css({position: "absolute"}).css({ top : '0px' , left: '0px' });                 
+    
+    $("#third-level-right-circle7").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle7").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle7").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle7").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-7").css({position: "absolute"}).css({left: '95px' , top: '90px'});
+    $("#letter2-7").css({position: "absolute"}).css({left: '95px' , top: '100px'});
+    $("#letter3-7").css({position: "absolute"}).css({left: '90px' , top: '110px'});
+    $("#letter4-7").css({position: "absolute"}).css({left: '85px' , top: '100px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle7").css("border-style","solid");
+    $("#third-level-left-circle7").css("border-width","2px");       
+    
+        $("#second-level-lower-circle2").css('background-color', 'white');
+    $("#third-level-upper-circle7").animate({ opacity: 1 });
+    $("#third-level-lower-circle7").animate({ opacity: 1 });
+    $("#third-level-left-circle7").animate({ opacity: 1 });
+    $("#third-level-right-circle7").animate({ opacity: 1 });
+    $("#second-level-lower-circle2").animate({ opacity: 1 });
+    },640);
+    e.stopPropagation(); 
+    
+});
+//DONE
+$("#second-level-left-circle2").on("click",function(e){
+    Scene = 12 ;
+    ToBeClicked = 0 ;
+    $("#second-level-left-circle2").css("border-style","none");
+    $("#second-level-left-circle2").css("border-width","0px");
+    $("#second-level-right-circle2").css("pointer-events","none");
+    $("#second-level-lower-circle2").css("pointer-events","none");
+    $("#second-level-upper-circle2").css("pointer-events","none");
+        
+    $("#second-level-lower-circle2").css({ opacity: 0 },10);
+    $("#second-level-right-circle2").css({ opacity: 0 },10);
+    $("#second-level-left-circle2").css({ opacity: 0 },10);
+    $("#second-level-upper-circle2").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle8").css("pointer-events","auto");
+    $("#third-level-lower-circle8").css("pointer-events","auto");
+    $("#third-level-left-circle8").css("pointer-events","auto");
+    $("#third-level-right-circle8").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle8").css({position: "absolute"}).css({left: '383px' , top: '0px'}, 1000);
+    $("#third-level-left-circle8").css({position: "absolute"}).css({left: '0px' , top: '0px'}, 1000);
+    $("#third-level-upper-circle8").css({position: "absolute"}).css({top: '-125px' , left: '192px' }, 1000);
+    $("#third-level-lower-circle8").css({position: "absolute"}).css({ top : '125px' , left: '192px' }, 1000);                   
+    
+    $("#third-level-right-circle8").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle8").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle8").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle8").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-8").css({position: "absolute"}).css({left: '95px' , top: '90px'});
+    $("#letter2-8").css({position: "absolute"}).css({left: '90px' , top: '100px'});
+    $("#letter3-8").css({position: "absolute"}).css({left: '90px' , top: '110px'});
+    $("#letter4-8").css({position: "absolute"}).css({left: '80px' , top: '95px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle8").css("border-style","solid");
+    $("#third-level-left-circle8").css("border-width","2px");       
+    
+        $("#second-level-left-circle2").css('background-color', 'white');
+    $("#third-level-upper-circle8").animate({ opacity: 1 });
+    $("#third-level-lower-circle8").animate({ opacity: 1 });
+    $("#third-level-left-circle8").animate({ opacity: 1 });
+    $("#third-level-right-circle8").animate({ opacity: 1 });
+    $("#second-level-left-circle2").animate({ opacity: 1 });
+    },640);
+    ////////////////////////
+    
+    e.stopPropagation(); 
+});
+  //DONE  
+$("#second-level-upper-circle2").on("click",function(e){
+   
+    Scene = 9 ;
+    ToBeClicked = 0 ;
+     $("#second-level-upper-circle2").css("border-style","none");
+    $("#second-level-upper-circle2").css("border-width","0px");
+    $("#second-level-right-circle2").css("pointer-events","none");
+    $("#second-level-left-circle2").css("pointer-events","none");
+    $("#second-level-lower-circle2").css("pointer-events","none");
+        
+    $("#second-level-lower-circle2").css({ opacity: 0 },10);
+    $("#second-level-right-circle2").css({ opacity: 0 },10);
+    $("#second-level-left-circle2").css({ opacity: 0 },10);
+    $("#second-level-upper-circle2").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle5").css("pointer-events","auto");
+    $("#third-level-lower-circle5").css("pointer-events","auto");
+    $("#third-level-left-circle5").css("pointer-events","auto");
+    $("#third-level-right-circle5").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle5").css({position: "absolute"}).css({left: '190px' , top: '125px'}, 1000);
+    $("#third-level-left-circle5").css({position: "absolute"}).css({left: '-187px' , top: '125px'}, 1000);
+    $("#third-level-upper-circle5").css({position: "absolute"}).css({top: '0px' , left: '2px' }, 1000);
+    $("#third-level-lower-circle5").css({position: "absolute"}).css({ top : '250px' , left: '2px' }, 1000);                 
+    
+    $("#third-level-right-circle5").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle5").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle5").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle5").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-5").css({position: "absolute"}).css({left: '80px' , top: '86px'});
+    $("#letter2-5").css({position: "absolute"}).css({left: '70px' , top: '87.5px'});
+    $("#letter3-5").css({position: "absolute"}).css({left: '80px' , top: '88px'});
+    $("#letter4-5").css({position: "absolute"}).css({left: '80px' , top: '87.5px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle5").css("border-style","solid");
+    $("#third-level-left-circle5").css("border-width","2px");       
+    
+        $("#second-level-upper-circle2").css('background-color', 'white');
+    $("#third-level-upper-circle5").animate({ opacity: 1 });
+    $("#third-level-lower-circle5").animate({ opacity: 1 });
+    $("#third-level-left-circle5").animate({ opacity: 1 });
+    $("#third-level-right-circle5").animate({ opacity: 1 });
+    $("#second-level-upper-circle2").animate({ opacity: 1 });
+    },640);
+    /////////////////////////////////
+    
+    e.stopPropagation(); 
+});
+//DONE    
+$("#second-level-right-circle2").on("click",function(e){
+    Scene = 10 ;
+    ToBeClicked = 0 ;
+    $("#second-level-right-circle2").css("border-style","none");
+    $("#second-level-right-circle2").css("border-width","0px");
+    $("#second-level-upper-circle2").css("pointer-events","none");
+    $("#second-level-left-circle2").css("pointer-events","none");
+    $("#second-level-lower-circle2").css("pointer-events","none");
+        
+    $("#second-level-lower-circle2").css({ opacity: 0 },10);
+    $("#second-level-right-circle2").css({ opacity: 0 },10);
+    $("#second-level-left-circle2").css({ opacity: 0 },10);
+    $("#second-level-upper-circle2").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle6").css("pointer-events","auto");
+    $("#third-level-lower-circle6").css("pointer-events","auto");
+    $("#third-level-left-circle6").css("pointer-events","auto");
+    $("#third-level-right-circle6").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle6").css({position: "absolute"}).css({left: '0px' , top: '-5px'}, 1000);
+    $("#third-level-left-circle6").css({position: "absolute"}).css({left: '-374px' , top: '-5px'}, 1000);
+    $("#third-level-upper-circle6").css({position: "absolute"}).css({top: '-130px' , left: '-188px' }, 1000);
+    $("#third-level-lower-circle6").css({position: "absolute"}).css({ top : '120px' , left: '-188px' }, 1000);                 
+    
+    $("#third-level-right-circle6").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle6").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle6").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle6").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-6").css({position: "absolute"}).css({left: '80px' , top: '86px'});
+    $("#letter2-6").css({position: "absolute"}).css({left: '95px' , top: '110px'});
+    $("#letter3-6").css({position: "absolute"}).css({left: '60px' , top: '88px'});
+    $("#letter4-6").css({position: "absolute"}).css({left: '85px' , top: '87.5px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle6").css("border-style","solid");
+    $("#third-level-left-circle6").css("border-width","2px");       
+    
+        $("#second-level-right-circle2").css('background-color', 'white');
+    $("#third-level-upper-circle6").animate({ opacity: 1 });
+    $("#third-level-lower-circle6").animate({ opacity: 1 });
+    $("#third-level-left-circle6").animate({ opacity: 1 });
+    $("#third-level-right-circle6").animate({ opacity: 1 });
+    $("#second-level-right-circle2").animate({ opacity: 1 });
+    },640);    
+    e.stopPropagation(); 
+});
+    
+$("#second-level-lower-circle3").on("click", function(e) {
+    Scene = 15 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-lower-circle3").css("border-style","none");
+    $("#second-level-lower-circle3").css("border-width","0px");
+    $("#second-level-right-circle3").css("pointer-events","none");
+    $("#second-level-left-circle3").css("pointer-events","none");
+    $("#second-level-upper-circle3").css("pointer-events","none");
+        
+    $("#second-level-lower-circle3").css({ opacity: 0 },10);
+    $("#second-level-right-circle3").css({ opacity: 0 },10);
+    $("#second-level-left-circle3").css({ opacity: 0 },10);
+    $("#second-level-upper-circle3").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle11").css("pointer-events","auto");
+    $("#third-level-lower-circle11").css("pointer-events","auto");
+    $("#third-level-left-circle11").css("pointer-events","auto");
+    $("#third-level-right-circle11").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    //DELW
+    $("#third-level-right-circle11").css({position: "absolute"}).css({left: '191px' , top: '-125px'}, 1000);
+    $("#third-level-left-circle11").css({position: "absolute"}).css({left: '-192px' , top: '-125px'}, 1000);
+    $("#third-level-upper-circle11").css({position: "absolute"}).css({top: '-250px' , left: '0px' }, 1000);
+    $("#third-level-lower-circle11").css({position: "absolute"}).css({ top : '0px' , left: '0px' }, 1000);                 
+    
+    $("#third-level-right-circle11").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle11").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle11").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle11").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-11").css({position: "absolute"}).css({left: '85px' , top: '95px'});
+    $("#letter2-11").css({position: "absolute"}).css({left: '80px' , top: '120px'});
+    $("#letter3-11").css({position: "absolute"}).css({left: '80px' , top: '110px'});
+    $("#letter4-11").css({position: "absolute"}).css({left: '75px' , top: '100px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle11").css("border-style","solid");
+    $("#third-level-left-circle11").css("border-width","2px");       
+    
+        $("#second-level-lower-circle3").css('background-color', 'white');
+    $("#third-level-upper-circle11").animate({ opacity: 1 });
+    $("#third-level-lower-circle11").animate({ opacity: 1 });
+    $("#third-level-left-circle11").animate({ opacity: 1 });
+    $("#third-level-right-circle11").animate({ opacity: 1 });
+    $("#second-level-lower-circle3").animate({ opacity: 1 });
+    },640);
+    ///////////
+    e.stopPropagation();
+    });
+    
+$("#second-level-left-circle3").on("click", function(e) {
+    
+    Scene = 16 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-left-circle3").css("border-style","none");
+    $("#second-level-left-circle3").css("border-width","0px");
+    $("#second-level-right-circle3").css("pointer-events","none");
+    $("#second-level-lower-circle3").css("pointer-events","none");
+    $("#second-level-upper-circle3").css("pointer-events","none");
+        
+    $("#second-level-lower-circle3").css({ opacity: 0 },10);
+    $("#second-level-right-circle3").css({ opacity: 0 },10);
+    $("#second-level-left-circle3").css({ opacity: 0 },10);
+    $("#second-level-upper-circle3").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle12").css("pointer-events","auto");
+    $("#third-level-lower-circle12").css("pointer-events","auto");
+    $("#third-level-left-circle12").css("pointer-events","auto");
+    $("#third-level-right-circle12").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle12").css({position: "absolute"}).css({left: '383px' , top: '0px'}, 1000);
+    $("#third-level-left-circle12").css({position: "absolute"}).css({left: '0px' , top: '0px'}, 1000);
+    $("#third-level-upper-circle12").css({position: "absolute"}).css({top: '-125px' , left: '192px' }, 1000);
+    $("#third-level-lower-circle12").css({position: "absolute"}).css({ top : '125px' , left: '192px' }, 1000);                 
+    
+    $("#third-level-right-circle12").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle12").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle12").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle12").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-12").css({position: "absolute"}).css({left: '85px' , top: '90px'});
+    $("#letter2-12").css({position: "absolute"}).css({left: '90px' , top: '100px'});
+    $("#letter3-12").css({position: "absolute"}).css({left: '90px' , top: '110px'});
+    $("#letter4-12").css({position: "absolute"}).css({left: '80px' , top: '95px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle12").css("border-style","solid");
+    $("#third-level-left-circle12").css("border-width","2px");       
+    
+        $("#second-level-left-circle3").css('background-color', 'white');
+    $("#third-level-upper-circle12").animate({ opacity: 1 });
+    $("#third-level-lower-circle12").animate({ opacity: 1 });
+    $("#third-level-left-circle12").animate({ opacity: 1 });
+    $("#third-level-right-circle12").animate({ opacity: 1 });
+    $("#second-level-left-circle3").animate({ opacity: 1 });
+    },640);
+    
+    e.stopPropagation();
+    });
+    
+$("#second-level-upper-circle3").on("click", function(e) {
+    Scene = 13 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-upper-circle3").css("border-style","none");
+    $("#second-level-upper-circle3").css("border-width","0px");
+    $("#second-level-right-circle3").css("pointer-events","none");
+    $("#second-level-lower-circle3").css("pointer-events","none");
+    $("#second-level-left-circle3").css("pointer-events","none");
+        
+    $("#second-level-lower-circle3").css({ opacity: 0 },10);
+    $("#second-level-right-circle3").css({ opacity: 0 },10);
+    $("#second-level-left-circle3").css({ opacity: 0 },10);
+    $("#second-level-upper-circle3").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle9").css("pointer-events","auto");
+    $("#third-level-lower-circle9").css("pointer-events","auto");
+    $("#third-level-left-circle9").css("pointer-events","auto");
+    $("#third-level-right-circle9").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle9").css({position: "absolute"}).css({left: '190px' , top: '125px'}, 1000);
+    $("#third-level-left-circle9").css({position: "absolute"}).css({left: '-187px' , top: '125px'}, 1000);
+    $("#third-level-upper-circle9").css({position: "absolute"}).css({top: '0px' , left: '2px' }, 1000);
+    $("#third-level-lower-circle9").css({position: "absolute"}).css({ top : '250px' , left: '2px' }, 1000);                 
+    
+    $("#third-level-right-circle9").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle9").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle9").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle9").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-9").css({position: "absolute"}).css({left: '80px' , top: '100px'});
+    $("#letter2-9").css({position: "absolute"}).css({left: '85px' , top: '100px'});
+    $("#letter3-9").css({position: "absolute"}).css({left: '85px' , top: '110px'});
+    $("#letter4-9").css({position: "absolute"}).css({left: '80px' , top: '95px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle9").css("border-style","solid");
+    $("#third-level-left-circle9").css("border-width","2px");       
+    
+        $("#second-level-upper-circle3").css('background-color', 'white');
+    $("#third-level-upper-circle9").animate({ opacity: 1 });
+    $("#third-level-lower-circle9").animate({ opacity: 1 });
+    $("#third-level-left-circle9").animate({ opacity: 1 });
+    $("#third-level-right-circle9").animate({ opacity: 1 });
+    $("#second-level-upper-circle3").animate({ opacity: 1 });
+    },640);
+    ////////////////
+    
+    e.stopPropagation();
+    });
+    
+$("#second-level-right-circle3").on("click", function(e) {
+    Scene = 14 ;
+    ToBeClicked = 0 ;
+    
+    $("#second-level-right-circle3").css("border-style","none");
+    $("#second-level-right-circle3").css("border-width","0px");
+    $("#second-level-upper-circle3").css("pointer-events","none");
+    $("#second-level-lower-circle3").css("pointer-events","none");
+    $("#second-level-left-circle3").css("pointer-events","none");
+        
+    $("#second-level-lower-circle3").css({ opacity: 0 },10);
+    $("#second-level-right-circle3").css({ opacity: 0 },10);
+    $("#second-level-left-circle3").css({ opacity: 0 },10);
+    $("#second-level-upper-circle3").css({ opacity: 0 },10);
+    
+    
+    $("#third-level-upper-circle10").css("pointer-events","auto");
+    $("#third-level-lower-circle10").css("pointer-events","auto");
+    $("#third-level-left-circle10").css("pointer-events","auto");
+    $("#third-level-right-circle10").css("pointer-events","auto");
+    
+    setTimeout(function(){
+    
+    $("#third-level-right-circle10").css({position: "absolute"}).css({left: '0px' , top: '-5px'}, 1000);
+    $("#third-level-left-circle10").css({position: "absolute"}).css({left: '-374px' , top: '-5px'}, 1000);
+    $("#third-level-upper-circle10").css({position: "absolute"}).css({top: '-130px' , left: '-188px' }, 1000);
+    $("#third-level-lower-circle10").css({position: "absolute"}).css({ top : '120px' , left: '-188px' }, 1000);                  
+    
+    $("#third-level-right-circle10").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-left-circle10").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-upper-circle10").css({paddingTop : '82%' , width : '100%'});
+    $("#third-level-lower-circle10").css({paddingTop : '82%' , width : '100%'});    
+        
+    $("#letter1-10").css({position: "absolute"}).css({left: '80px' , top: '100px'});
+    $("#letter2-10").css({position: "absolute"}).css({left: '75px' , top: '100px'});
+    $("#letter3-10").css({position: "absolute"}).css({left: '85px' , top: '110px'});
+    $("#letter4-10").css({position: "absolute"}).css({left: '80px' , top: '95px'});
+    
+    $(".letter").animate({fontSize: '100px' });
+    $(".letter").animate({paddingBottom : '50%'});
+    },610);
+            
+        
+    setTimeout(function(){
+        
+        $("#third-level-left-circle10").css("border-style","solid");
+    $("#third-level-left-circle10").css("border-width","2px");       
+    
+        $("#second-level-right-circle3").css('background-color', 'white');
+    $("#third-level-upper-circle10").animate({ opacity: 1 });
+    $("#third-level-lower-circle10").animate({ opacity: 1 });
+    $("#third-level-left-circle10").animate({ opacity: 1 });
+    $("#third-level-right-circle10").animate({ opacity: 1 });
+    $("#second-level-right-circle3").animate({ opacity: 1 });
+    },640);
+    ///////////
+    e.stopPropagation();
+    });
+    
+    //Third Level 
+
+var SuggList = ["#word1text","#word2text","#word3text","#word4text","#word5text"]    
+    
+    
+$('#fname').on('input',function(e){
+    var InputText = $('#fname').val().split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } );
+    InputText = InputText[InputText.length - 1 ];
+    //alert(InputText);
+   $.ajax({
+    type: 'POST',
+    url: 'http://localhost:5000/predict/',
+    dataType: "json",
+    data: {
+        word: InputText
+    },
+    success: function(msg){
+       var words = msg["predicted"]
+       //alert(words);
+       ////alert("Got " + words);
+       var i;
+        for (i = 0; i < words.length; i++) { 
+            $(SuggList[i]).val(words[i]);
+            $(SuggList[i]).text(words[i]);
+            }
+        for ( i = words.length ; i < 5 ; i++)
+            {
+                $(SuggList[i]).val("");
+            $(SuggList[i]).text("");
+            }
+        ////alert("Done");
+    }
+});
+    ////alert("done");
+});
+    
+$("#third-level-lower-circle1").on("click",function(e){
+    
+    var text = $("#fname").val() + $("#third-level-lower-circle1").text();
+    $("#fname").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle1").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle1").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle1").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle1").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle1").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle1").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-lower-circle2").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle2").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle2").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle2").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle2").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle2").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    $("input").text(text);
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle2").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle2").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle3").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle3").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle3").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle3").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle3").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle3").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle3").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle3").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle4").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle4").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle4").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle4").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle4").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle4").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle4").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle4").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle5").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle5").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle5").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle5").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle5").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle5").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle5").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle5").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle6").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle6").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle6").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle6").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle6").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle6").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle6").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle6").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle7").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle7").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle7").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle7").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle7").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle7").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle7").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle7").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle8").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle8").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle8").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle8").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle8").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle8").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle8").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle8").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle9").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle9").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle9").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle9").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle9").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle9").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle9").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle9").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle10").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle10").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle10").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle10").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle10").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle10").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle10").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle10").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle11").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle11").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle11").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle11").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle11").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle11").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle11").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle11").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+    
+$("#third-level-lower-circle12").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-lower-circle12").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#third-level-upper-circle12").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-upper-circle12").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+               
+$("#third-level-left-circle12").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-left-circle12").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+  
+$("#third-level-right-circle12").on("click",function(e){
+    
+    var text = $("input").val() + $("#third-level-right-circle12").text();
+    $("input").val(text);
+    $("#fname").text(text);
+    $("#fname").trigger("input");
+    e.stopPropagation();
+    
+});
+
+$("#word1").on("click",function(e){
+    
+    var text =  $("#fname").text();
+    text = text.split(" ");
+    var newtext = ""
+    for (var i = 0 ; i < text.length ; i++)
+        {
+            if ( i == text.length - 1 )
+                {
+                   newtext += $("#word1").text(); 
+                }
+            else 
+                {
+                    newtext = newtext + text[i] + " ";
+                }
+        }
+    $("input").val(newtext);
+    $("#fname").text(newtext);
+    //e.stopPropagation();
+    
+});
+    
+$("#word2").on("click",function(e){
+    var text =  $("#fname").text();
+    text = text.split(" ");
+    var newtext = ""
+    for (var i = 0 ; i < text.length ; i++)
+        {
+            if ( i == text.length - 1 )
+                {
+                   newtext += $("#word2").text(); 
+                }
+            else 
+                {
+                    newtext = newtext + text[i] + " ";
+                }
+        }
+    $("input").val(newtext);
+    $("#fname").text(newtext);
+    //e.stopPropagation();
+    
+});
+    
+$("#word3").on("click",function(e){
+    var text =  $("#fname").text();
+    text = text.split(" ");
+    var newtext = ""
+    for (var i = 0 ; i < text.length ; i++)
+        {
+            if ( i == text.length - 1 )
+                {
+                   newtext += $("#word3").text(); 
+                }
+            else 
+                {
+                    newtext = newtext + text[i] + " ";
+                }
+        }
+    $("input").val(newtext);
+    $("#fname").text(newtext);
+    //e.stopPropagation();
+});
+    
+$("#word4").on("click",function(e){
+    var text =  $("#fname").text();
+    text = text.split(" ");
+    var newtext = ""
+    for (var i = 0 ; i < text.length ; i++)
+        {
+            if ( i == text.length - 1 )
+                {
+                   newtext += $("#word4").text(); 
+                }
+            else 
+                {
+                    newtext = newtext + text[i] + " ";
+                }
+        }
+    $("input").val(newtext);
+    $("#fname").text(newtext);
+    //e.stopPropagation();
+});
+    
+$("#word5").on("click",function(e)
+               {
+    var text =  $("#fname").text();
+    text = text.split(" ");
+    var newtext = ""
+    for (var i = 0 ; i < text.length ; i++)
+        {
+            if ( i == text.length - 1 )
+                {
+                   newtext += $("#word5").text(); 
+                }
+            else 
+                {
+                    newtext = newtext + text[i] + " ";
+                }
+        }
+    $("input").val(newtext);
+    $("#fname").text(newtext);
+    //e.stopPropagation();
+});
+               
+$("#delete-circle").on("click", function() {
+            var text = $("input").val()
+            $("input").val(text.substring(0,text.length-1));
+            
+        });
+               
+$("#back-circle").on("click", function() {
+    var L1 = '15' , T1 = '12'  , L2 = '16' , T2 = '15' ;
+    
+    if ( Scene == 3 )
+        {
+            LetterID = ['5','6','7','8'];
+            L1 = '20' , T1 = '18'  , L2 = '10' , T2 = '12' ;
+        }
+    else if ( Scene == 2)
+        {
+            LetterID = ['1','2','3','4'];
+        }
+    else if ( Scene == 4 )
+        {
+            LetterID = ['9','10','11','12'];
+        }
+    if ( Scene == 2 || Scene == 3 || Scene == 4 ){
+        var CirclesID = (Scene-1).toString();
+        //alert(Scene);
+        setTimeout( function(){ 
+        $("#second-level-right-circle"+ CirclesID).css({opacity: 0});
+        $("#second-level-left-circle"+ CirclesID).css({opacity: 0});
+        $("#second-level-upper-circle"+ CirclesID).css({opacity: 0});
+        $("#second-level-lower-circle"+ CirclesID).css({opacity: 0});
+        }  , 250 );
+        
+        setTimeout( function(){ 
+        $("#second-level-right-circle" + CirclesID  ).css({position: "absolute"}).css({left: '59.5%' , top: '30%'}, "slow");
+        $("#second-level-left-circle"+ CirclesID).css({position: "absolute"}).css({left: '1.9%' , top: '30%'}, "slow");
+        $("#second-level-upper-circle"+ CirclesID).css({position: "absolute"}).css({top: '0.6%' , left: '30.5%' }, "slow");        
+        $("#second-level-lower-circle"+ CirclesID).css({position: "absolute"}).css({ top : '58.7%' , left: '30.5%' }, "slow");       
+        $("#second-level-upper-circle"+ CirclesID).css({paddingTop : '36.5%' , width : '38.5%'});
+        $("#second-level-right-circle"+ CirclesID).css({paddingTop : '36.5%' , width : '38.5%'});
+        $("#second-level-lower-circle"+ CirclesID).css({paddingTop : '36.5%' , width : '38.5%'});
+        $("#second-level-left-circle"+ CirclesID).css({paddingTop : '36.5%' , width : '38.5%'});    
+        $(".letter").css({fontSize: '26px' });
+            
+                    $("#letter1-"+LetterID[0]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter2-"+LetterID[0]).css({position: "absolute"}).css({left: '15px' , top: '12px'});
+                    $("#letter3-"+LetterID[0]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter4-"+LetterID[0]).css({position: "absolute"}).css({left: '15px' , top: '12px'}); 
+            
+                    $("#letter1-"+LetterID[1]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter2-"+LetterID[1]).css({position: "absolute"}).css({left: L1+'px' , top: T1+'px'});
+                    $("#letter3-"+LetterID[1]).css({position: "absolute"}).css({left: L2+'px' , top: T2+'px'});
+                    $("#letter4-"+LetterID[1]).css({position: "absolute"}).css({left: '15px' , top: '12px'});   
+                    
+                    $("#letter1-"+LetterID[2]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter2-"+LetterID[2]).css({position: "absolute"}).css({left: '15px' , top: '12px'});
+                    $("#letter3-"+LetterID[2]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter4-"+LetterID[2]).css({position: "absolute"}).css({left: '15px' , top: '12px'}); 
+            
+                    $("#letter1-"+LetterID[3]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter2-"+LetterID[3]).css({position: "absolute"}).css({left: '15px' , top: '12px'});
+                    $("#letter3-"+LetterID[3]).css({position: "absolute"}).css({left: '16px' , top: '15px'});
+                    $("#letter4-"+LetterID[3]).css({position: "absolute"}).css({left: '15px' , top: '12px'});   
+                
+        $(".third-level-circle").css({ width : '36%' , paddingTop : '0.1%'}); //paddingTop : '68%' ,
+  }  , 1000 );
+        
+        setTimeout(function(){    
+        $("#left_circle").css('background-color', '#4679BD');
+        $("#second-level-right-circle"+ CirclesID).css({opacity: 1});
+        $("#second-level-left-circle"+ CirclesID).css({opacity: 1});
+        $("#second-level-upper-circle"+ CirclesID).css({opacity: 1});
+        $("#second-level-lower-circle"+ CirclesID).css({opacity: 1}); 
+        $("#right_circle").css('background-color', '#4679BD');
+        $("#middle_circle").css('background-color', '#4679BD');
+        }, 1600);
+        
+        setTimeout( function(){ 
+        $("#left_circle").css({ opacity: 1 });
+        $("#left_circle").css("pointer-events","auto");
+        
+        $("#right_circle").css({ opacity: 1 });
+        $("#right_circle").css("pointer-events","auto");    
+        $("#middle_circle").css({ opacity: 1 });
+        $("#middle_circle").css("pointer-events","auto");   
+        $("#second-level-lower-circle"+ CirclesID).css("pointer-events","none");
+        $("#second-level-right-circle"+ CirclesID).css("pointer-events","none");
+        $("#second-level-upper-circle"+ CirclesID).css("pointer-events","none");
+        $("#second-level-left-circle"+ CirclesID).css("pointer-events","none");     
+        }  , 1800 );           
+        Scene = 1 ; 
+        ToBeClicked = ToBeClicked - 1 ;
+        //alert(ToBeClicked);
+        }
+    
+    else if ( Scene == 5 || Scene == 6 || Scene == 7 || Scene == 8)
+        {
+            //alert("HERE");
+            var Left = [];
+            var Top = [];
+            if ( Scene == 5 )
+                {  
+                    Left = ['27.5','25.5','27.5','25.5'];
+                    Top = ['28','25.5','31','27.5'];
+                }
+            if ( Scene == 6 )
+                {  
+                    Left = ['32','30','32','32'];
+                    Top = ['26','32','27','29.5'];
+                }
+            if ( Scene == 7 )
+                {  
+                    Left = ['27','27','27','20'];
+                    Top = ['25','27.5','27','27.5'];
+                }
+            if ( Scene == 8 )
+                {  
+                    Left = ['27','28','25','28'];
+                    Top = ['29','27.5','30','25'];
+                }
+            var CirclesID = (Scene-4).toString();
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-left-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-upper-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-lower-circle"+ CirclesID).css({opacity: 0});
+        }  , 20 );
+        
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({position: "absolute"}).css({left: '61.5%' , top: '34%'});
+        $("#third-level-left-circle"+ CirclesID).css({position: "absolute"}).css({left: '2.9%' , top: '34%'});
+        $("#third-level-upper-circle"+ CirclesID).css({position: "absolute"}).css({top: '3.6%' , left: '31.5%' });
+        $("#third-level-lower-circle"+ CirclesID).css({position: "absolute"}).css({ top : '62.7%' , left: '31.5%' });       
+        $("#third-level-right-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-left-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-upper-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-lower-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});     
+        
+    $("#letter1-"+CirclesID).css({position: "absolute"}).css({left: Left[0]+'px' , top: Top[0]+'px'});
+    $("#letter2-"+CirclesID).css({position: "absolute"}).css({left: Left[1]+'px' , top: Top[1]+'px'});
+    $("#letter3-"+CirclesID).css({position: "absolute"}).css({left: Left[2]+'px' , top: Top[2]+'px'});
+    $("#letter4-"+CirclesID).css({position: "absolute"}).css({left: Left[3]+'px' , top: Top[3]+'px'}); 
+            
+  }  , 20 );
+        
+        setTimeout(function(){    
+            $(".letter").animate({fontSize: '46px' , paddingBottom: '10%' });
+        $("#second-level-upper-circle1").css('background-color', '#505E8D');
+        $("#second-level-right-circle1").css('background-color', '#505E8D');
+        $("#second-level-lower-circle1").css('background-color', '#505E8D');
+        $("#second-level-left-circle1").css('background-color', '#505E8D');
+        
+            $("#second-level-upper-circle1").css({ opacity: 1 });
+            $("#second-level-upper-circle1").css("pointer-events","auto");
+            $("#second-level-left-circle1").css({ opacity: 1 });
+            $("#second-level-left-circle1").css("pointer-events","auto");
+            $("#second-level-right-circle1").css({ opacity: 1 });
+            $("#second-level-right-circle1").css("pointer-events","auto");
+            $("#second-level-lower-circle1").css({ opacity: 1 });
+            $("#second-level-lower-circle1").css("pointer-events","auto");        
+       
+//        $("#second-level-right-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-left-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-upper-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-lower-circle"+ CirclesID).css({opacity: 1}); 
+        }, 600);
+        
+            //alert("s");
+        setTimeout( function(){
+            
+        $("#third-level-upper-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-lower-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-left-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-right-circle"+ CirclesID).css({ opacity: 1 });    
+            
+        
+        $("#third-level-upper-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-lower-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-left-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-right-circle"+ CirclesID).css("pointer-events","none");
+            
+        }  , 700 );           
+         
+        Scene = 2;
+}
+            
+    else if ( Scene == 9 || Scene == 10 || Scene == 11 || Scene == 12 )
+        {
+            var Left = [];
+            var Top = [];
+    
+            if ( Scene == 9 )
+                {  
+                    Left = ['25.5','22.5','25.5','25.5'];
+                    Top = ['26','27.5','28','27.5'];
+                }
+            if ( Scene == 10 )
+                {  
+                    Left = ['27','34','16','27.5'];
+                    Top = ['26','37','27','25.5'];
+                }
+            if ( Scene == 11 )
+                {  
+                    Left = ['32','32.5','30','27.5'];
+                    Top = ['23','27.5','30','27.5'];
+                }
+            if ( Scene == 12 )
+                {  
+                    Left = ['31','30','31','25'];
+                    Top = ['25','27.5','30','25'];
+                }
+            var CirclesID = (Scene-4).toString();
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-left-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-upper-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-lower-circle"+ CirclesID).css({opacity: 0});
+        }  , 20 );
+        
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({position: "absolute"}).css({left: '61.5%' , top: '34%'});
+        $("#third-level-left-circle"+ CirclesID).css({position: "absolute"}).css({left: '2.9%' , top: '34%'});
+        $("#third-level-upper-circle"+ CirclesID).css({position: "absolute"}).css({top: '3.6%' , left: '31.5%' });
+        $("#third-level-lower-circle"+ CirclesID).css({position: "absolute"}).css({ top : '62.7%' , left: '31.5%' });             
+        
+            $("#third-level-right-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-left-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-upper-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-lower-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});     
+        
+    $("#letter1-"+CirclesID).css({position: "absolute"}).css({left: Left[0]+'px' , top: Top[0]+'px'});
+    $("#letter2-"+CirclesID).css({position: "absolute"}).css({left: Left[1]+'px' , top: Top[1]+'px'});
+    $("#letter3-"+CirclesID).css({position: "absolute"}).css({left: Left[2]+'px' , top: Top[2]+'px'});
+    $("#letter4-"+CirclesID).css({position: "absolute"}).css({left: Left[3]+'px' , top: Top[3]+'px'}); 
+  }  , 20 );
+        
+        setTimeout(function(){    
+            $(".letter").animate({fontSize: '46px' , paddingBottom: '10%' });
+        $("#second-level-upper-circle2").css('background-color', '#505E8D');
+        $("#second-level-right-circle2").css('background-color', '#505E8D');
+        $("#second-level-lower-circle2").css('background-color', '#505E8D');
+        $("#second-level-left-circle2").css('background-color', '#505E8D');
+            
+        $("#second-level-upper-circle2").css({ opacity: 1 });
+            $("#second-level-upper-circle2").css("pointer-events","auto");
+            $("#second-level-left-circle2").css({ opacity: 1 });
+            $("#second-level-left-circle2").css("pointer-events","auto");
+            $("#second-level-right-circle2").css({ opacity: 1 });
+            $("#second-level-right-circle2").css("pointer-events","auto");
+            $("#second-level-lower-circle2").css({ opacity: 1 });
+            $("#second-level-lower-circle2").css("pointer-events","auto");        
+           
+//        $("#second-level-right-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-left-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-upper-circle"+ CirclesID).css({opacity: 1});
+//        $("#second-level-lower-circle"+ CirclesID).css({opacity: 1}); 
+        }, 600);
+        
+        setTimeout( function(){
+            
+        $("#third-level-upper-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-lower-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-left-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-right-circle"+ CirclesID).css({ opacity: 1 });    
+        
+        $("#third-level-upper-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-lower-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-left-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-right-circle"+ CirclesID).css("pointer-events","none");
+            
+        }  , 700 );           
+         
+        Scene = 3;
+        }
+    
+    else if ( Scene == 13 || Scene == 14 || Scene == 15 || Scene == 16)
+        {
+            
+            var Left = [];
+            var Top = [];
+   
+    
+            if ( Scene == 13 )
+                {  
+                    Left = ['27.5','25.5','27.5','25.5'];
+                    Top = ['28','27','31','29'];
+                }
+            if ( Scene == 14 )
+                {  
+                    Left = ['27','25','32','25'];
+                    Top = ['28','32','27','29.5'];
+                }
+            if ( Scene == 15 )
+                {  
+                    Left = ['27','27','27','25'];
+                    Top = ['29','32','27','27.5'];
+                }
+            if ( Scene == 16 )
+                {  
+                    Left = ['27','28','27','26'];
+                    Top = ['29','27.5','30','27'];
+                }
+            var CirclesID = (Scene-4).toString();
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-left-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-upper-circle"+ CirclesID).css({opacity: 0});
+        $("#third-level-lower-circle"+ CirclesID).css({opacity: 0});
+        }  , 20 );
+        
+        setTimeout( function(){ 
+        $("#third-level-right-circle"+ CirclesID).css({position: "absolute"}).css({left: '61.5%' , top: '34%'});
+        $("#third-level-left-circle"+ CirclesID).css({position: "absolute"}).css({left: '2.9%' , top: '34%'});
+        $("#third-level-upper-circle"+ CirclesID).css({position: "absolute"}).css({top: '3.6%' , left: '31.5%' });
+        $("#third-level-lower-circle"+ CirclesID).css({position: "absolute"}).css({ top : '62.7%' , left: '31.5%' });             
+        $("#third-level-right-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-left-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-upper-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});
+        $("#third-level-lower-circle"+ CirclesID).css({paddingTop : '15%' , width : '36%'});     
+            
+        $("#letter1-"+CirclesID).css({position: "absolute"}).css({left: Left[0]+'px' , top: Top[0]+'px'});
+    $("#letter2-"+CirclesID).css({position: "absolute"}).css({left: Left[1]+'px' , top: Top[1]+'px'});
+    $("#letter3-"+CirclesID).css({position: "absolute"}).css({left: Left[2]+'px' , top: Top[2]+'px'});
+    $("#letter4-"+CirclesID).css({position: "absolute"}).css({left: Left[3]+'px' , top: Top[3]+'px'}); 
+  }  , 20 );
+        
+        setTimeout(function(){    
+            $(".letter").animate({fontSize: '46px' , paddingBottom: '10%' });
+        $("#second-level-upper-circle3").css('background-color', '#505E8D');
+        $("#second-level-right-circle3").css('background-color', '#505E8D');
+        $("#second-level-lower-circle3").css('background-color', '#505E8D');
+        $("#second-level-left-circle3").css('background-color', '#505E8D');
+            $("#second-level-upper-circle3").css({ opacity: 1 });
+            $("#second-level-upper-circle3").css("pointer-events","auto");
+            $("#second-level-left-circle3").css({ opacity: 1 });
+            $("#second-level-left-circle3").css("pointer-events","auto");
+            $("#second-level-right-circle3").css({ opacity: 1 });
+            $("#second-level-right-circle3").css("pointer-events","auto");
+            $("#second-level-lower-circle3").css({ opacity: 1 });
+            $("#second-level-lower-circle3").css("pointer-events","auto");        
+       
+        }, 600);
+        
+        setTimeout( function(){
+        
+        $("#third-level-upper-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-lower-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-left-circle"+ CirclesID).css({ opacity: 1 });
+        $("#third-level-right-circle"+ CirclesID).css({ opacity: 1 });    
+        
+        $("#third-level-upper-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-lower-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-left-circle"+ CirclesID).css("pointer-events","none");
+        $("#third-level-right-circle"+ CirclesID).css("pointer-events","none");
+            
+        }  , 700 );           
+         
+        Scene = 4;
+        }
+        });
+               
+$("#capslock-circle").on("click", function() {
+        if ( CapsLock == false )
+            {
+               CapsLock = true ; 
+                $(".third-level-circle").css({textTransform : 'lowercase'}); 
+                $('.third-level-circle span').each(function(i, obj) {
+    $(this).text($(this).text().toLowerCase());
+});
+
+            }
+        else if ( CapsLock == true )
+            {
+                CapsLock = false ; 
+                $(".third-level-circle").css({textTransform : 'uppercase'});
+                $('.third-level-circle span').each(function(i, obj) {
+    $(this).text($(this).text().toUpperCase());
+});
+
+            }
+            
+        });
+    
+$("#Space-circle").on("click", function() {
+     
+            var text = $("input").val() + " ";
+            $("input").val(text);
+        });
+    
+var SceneOneList = ["#left_circle","#middle_circle","#right_circle","#back-circle" ,"#delete-circle","#capslock-circle","#Space-circle","#word1"
+                   ,"#word2","#word3","#word4","#word5"];
+var SceneTwoList = ["#second-level-left-circle","#second-level-upper-circle","#second-level-right-circle","#second-level-lower-circle","#back-circle" ,"#delete-circle","#capslock-circle","#Space-circle","#word1"
+                   ,"#word2","#word3","#word4","#word5"];
+var SceneThreeList = ["#third-level-left-circle","#third-level-upper-circle","#third-level-right-circle","#third-level-lower-circle","#back-circle" ,"#delete-circle","#capslock-circle","#Space-circle","#word1"
+                   ,"#word2","#word3","#word4","#word5"];
+var FromPrevScene = false ;
+    
+$(document).keyup(function(e) {
+    e.preventDefault();
+    
+    if(e.which == 13) {
+        ////alert('You pressed enter!');
+        
+        if ( Scene == 1 )
+            {
+//                if ( FromPrevScene == true )
+//                    {
+//                        ToBeClicked = ToBeClicked - 1 ; 
+//                        FromPrevScene = false ;
+//                    }
+                
+                $(SceneOneList[ToBeClicked]).click();
+            }
+        else if ( Scene == 2 || Scene == 3 || Scene == 4 )
+            {
+                FromPrevScene = true ; 
+                var CirclesID = (Scene-1).toString();
+                if ( ToBeClicked >= 0 && ToBeClicked <= 3)
+                    {
+                        $(SceneTwoList[ToBeClicked] + CirclesID).click();
+                    }
+                else 
+                    {
+                        $(SceneTwoList[ToBeClicked]).click();
+                    }
+                
+            }
+        else if ( Scene => 5)
+            {
+                FromPrevScene = true ;
+                ////alert(Scene);
+                ////alert(ToBeClicked); 
+                var CirclesID = (Scene-4).toString();
+                if ( ToBeClicked >= 0 && ToBeClicked <= 3)
+                    {
+                        
+                        ////alert(SceneThreeList[ToBeClicked] + CirclesID);
+                        $(SceneThreeList[ToBeClicked] + CirclesID).click();
+                    }
+                else 
+                    {
+                        $(SceneThreeList[ToBeClicked]).click();
+                    }
+            }          
+    }
+    
+    else if(e.which == 38) {
+        //e.preventDefault();
+        ////alert('You pressed Up!');
+        if ( Scene == 1 )
+            {
+                if ( ToBeClicked >= 6  )
+                    {
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked - 1 ;
+                        $(SceneOneList[ToBeClicked]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked]).css("border-width","2px");   
+                    }
+            }
+        else if ( Scene == 2 || Scene == 3 || Scene == 4 )
+            {
+                var CirclesID = (Scene-1).toString();
+                if ( ToBeClicked == 0 || ToBeClicked == 3  || ToBeClicked == 2 )
+                {
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked] + CirclesID ).css("border-width","0px");
+                        ToBeClicked = 1 ;
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked]+ CirclesID).css("border-width","2px");
+                }
+                else if ( ToBeClicked >= 7 )
+                    {
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked] ).css("border-width","0px");
+                        ToBeClicked = ToBeClicked - 1 ; ;
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","2px");
+                    }
+            }
+        else if ( Scene >= 5 )
+            {
+                var CirclesID = (Scene-4).toString();
+                if ( ToBeClicked == 0 || ToBeClicked == 2 || ToBeClicked == 3 )
+                    {
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-width","0px");
+                        ToBeClicked = 1;
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if ( ToBeClicked >= 7 )
+                    {
+                        $(SceneThreeList[ToBeClicked] ).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked - 1 ;
+                        $(SceneThreeList[ToBeClicked]).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","2px");
+                    }
+            }
+    }
+    
+    else if(e.which == 39) {
+        ////alert('You pressed Right!');
+        if ( Scene == 1 )
+            {
+                
+                if ( ToBeClicked <= 4 )
+            {
+                   // $(".widgets-container").css("clear","both");
+                        if ( FromPrevScene == true)
+                            {
+                                ToBeClicked = ToBeClicked - 1 ; 
+                            }
+                FromPrevScene = false;
+                        //////alert(ToBeClicked);
+                        //////alert("From" + SceneOneList[ToBeClicked]);
+                        //////alert("To" + SceneOneList[ToBeClicked+1]);
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        $(SceneOneList[ToBeClicked+1]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked+1]).css("border-width","2px");
+                ToBeClicked = ToBeClicked + 1 ;
+            }
+            
+            }
+        else if ( Scene == 2 || Scene == 3 || Scene == 4 )
+         {
+             FromPrevScene = true;
+             //////alert("Yes Scene2,3,4");
+                var CirclesID = (Scene-1).toString();
+                //////alert(ToBeClicked);
+                if ( ToBeClicked == 0 || ToBeClicked == 2  )
+                    {
+                        //////alert(SceneTwoList[ToBeClicked]+CirclesID);
+                $(SceneTwoList[ToBeClicked]+CirclesID).css("border-style","none");
+                $(SceneTwoList[ToBeClicked]+CirclesID).css("border-width","0px");
+                        ToBeClicked = ToBeClicked + 2 ;
+                        if ( ToBeClicked == 2)
+                            {
+                               
+                                $(SceneTwoList[ToBeClicked]+CirclesID).css("border-style","solid");
+                                 $(SceneTwoList[ToBeClicked]+CirclesID).css("border-width","2px");
+                        
+                            }
+                        else 
+                            {
+                                
+                            $(SceneTwoList[ToBeClicked]).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","2px");
+                            }
+                    }
+             else if ( ToBeClicked == 4 || ToBeClicked == 5 )
+                 {
+                        //////alert(SceneTwoList[ToBeClicked]);
+                     ////alert(SceneTwoList[ToBeClicked+1]);
+                        $(SceneTwoList[ToBeClicked]).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked + 1 ;
+                        $(SceneTwoList[ToBeClicked]).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","2px");
+                 }
+             else if ( ToBeClicked == 1 || ToBeClicked == 3)
+                 {
+                     $(SceneTwoList[ToBeClicked]+CirclesID).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]+CirclesID).css("border-width","0px");
+                        ToBeClicked = 2 ;
+                        $(SceneTwoList[ToBeClicked]+CirclesID).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked]+CirclesID).css("border-width","2px");
+                 }
+         }
+        
+        else if ( Scene >= 5 )
+            {
+                FromPrevScene = true;
+                 var CirclesID = (Scene-4).toString();
+                 
+                if ( ToBeClicked == 2)
+                    {
+                        $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-width","0px");
+                         ToBeClicked = 4 ; 
+                         $(SceneThreeList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] ).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 0 || ToBeClicked == 1 || ToBeClicked == 3)
+                     {
+                         $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-width","0px");
+                         ToBeClicked = 2 ; 
+                         $(SceneThreeList[ToBeClicked] + CirclesID).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-width","2px");
+                     }
+                else if ( ToBeClicked == 4 || ToBeClicked == 5 )
+                    {
+                        $(SceneThreeList[ToBeClicked]).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                         ToBeClicked = ToBeClicked + 1 ; 
+                         $(SceneThreeList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] ).css("border-width","2px");
+                    }
+            }
+    }
+    
+    else if(e.which == 40) {
+        ////alert('You pressed Down!');
+        if ( Scene == 1 )
+            {
+                if ( ToBeClicked == 3 || ToBeClicked == 4 || ToBeClicked == 5)
+                    {
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 6 ;
+                        $(SceneOneList[ToBeClicked]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked]).css("border-width","2px");
+                    }
+                else if ( ToBeClicked >= 6 && ToBeClicked != 11  )
+                    {
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked + 1  ;
+                        $(SceneOneList[ToBeClicked]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked]).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 11 )
+                    {
+                       
+                    }
+            }
+        else if ( Scene == 2 || Scene == 3 || Scene == 4)
+            {
+                var CirclesID = (Scene-1).toString();
+                if ( ToBeClicked == 0 || ToBeClicked == 1 || ToBeClicked == 2  )
+                    {
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]+ CirclesID).css("border-width","0px");
+                        ToBeClicked = 3 ; 
+                        $(SceneTwoList[ToBeClicked] +CirclesID ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 4 || ToBeClicked == 5 || ToBeClicked == 6)
+                    {
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 7 ; 
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] ).css("border-width","2px");
+                    }
+                else if ( ToBeClicked >= 7 && ToBeClicked != 12)
+                    {
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked + 1 ; 
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] ).css("border-width","2px");
+                    }
+                
+            }
+        else if ( Scene >= 5 )
+            {
+                var CirclesID = (Scene-4).toString();
+                if ( ToBeClicked == 0 || ToBeClicked == 1 || ToBeClicked == 2 )
+                    {
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]+ CirclesID).css("border-width","0px");
+                        ToBeClicked = 3;
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 4 || ToBeClicked == 5 || ToBeClicked == 6)
+                    {
+                        $(SceneThreeList[ToBeClicked]).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 7;
+                        $(SceneThreeList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] ).css("border-width","2px");
+                    }
+                else if ( ToBeClicked >= 7 && ToBeClicked != 12 )
+                    {
+                        $(SceneThreeList[ToBeClicked]).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked + 1;
+                        $(SceneThreeList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] ).css("border-width","2px");
+                    }
+            }
+    }
+    
+    else if(e.which == 37) {
+        ////alert('You pressed Left!');
+        //alert(ToBeClicked);
+        if ( Scene == 1 )
+            {
+                if ( ToBeClicked >= 6 )
+                    {
+                        //alert("From " + SceneOneList[ToBeClicked] + " To " + SceneOneList[2]);
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 2 ; 
+                        $(SceneOneList[ToBeClicked]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked]).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 0 )
+                    {
+                        
+                    }
+                else 
+                    {
+                        //alert("From " + SceneOneList[ToBeClicked] + " To " + SceneOneList[ToBeClicked-1]);
+                        $(SceneOneList[ToBeClicked]).css("border-style","none");
+                        $(SceneOneList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked - 1 ;
+                        $(SceneOneList[ToBeClicked]).css("border-style","solid");
+                        $(SceneOneList[ToBeClicked]).css("border-width","2px");
+                    }
+            }
+        else if ( Scene == 2 || Scene ==  3 || Scene == 4 )
+            {
+                var CirclesID = (Scene-1).toString();
+                if ( ToBeClicked >= 4 && ToBeClicked != 5 && ToBeClicked != 6 )
+                {
+                    //alert("From " + SceneTwoList[ToBeClicked] + " To " + SceneTwoList[2]);
+                        $(SceneTwoList[ToBeClicked]).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 2 ; 
+                        $(SceneTwoList[ToBeClicked] +CirclesID ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-width","2px");
+                }
+                else if ( ToBeClicked == 1 || ToBeClicked == 3 || ToBeClicked == 2 )
+                    {
+                        //alert("From " + SceneTwoList[ToBeClicked] + " To " + SceneTwoList[0]);
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-width","0px");
+                        ToBeClicked = 0 ; 
+                        $(SceneTwoList[ToBeClicked] +CirclesID ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 5 || ToBeClicked == 6 )
+                    {
+                        //alert("From " + SceneTwoList[ToBeClicked] + " To " + SceneTwoList[ToBeClicked-1]);
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","none");
+                        $(SceneTwoList[ToBeClicked] ).css("border-width","0px");
+                        ////alert(SceneTwoList[ToBeClicked]);
+                        ToBeClicked = ToBeClicked - 1 ; 
+                        $(SceneTwoList[ToBeClicked] ).css("border-style","solid");
+                        $(SceneTwoList[ToBeClicked] ).css("border-width","2px");
+                        ////alert(SceneTwoList[ToBeClicked]);
+                    }
+            }
+        else if ( Scene >= 5 )
+            {
+                var CirclesID = (Scene-4).toString();
+                if ( ToBeClicked == 1 || ToBeClicked == 2 || ToBeClicked == 3)
+                    {
+                        //alert("From " + SceneThreeList[ToBeClicked]+CirclesID + " To " + SceneThreeList[0]+CirclesID);
+                         $(SceneThreeList[ToBeClicked]+CirclesID).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]+CirclesID).css("border-width","0px");
+                        ToBeClicked = 0 ; 
+                        $(SceneThreeList[ToBeClicked] +CirclesID ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if ( ToBeClicked == 4 || ToBeClicked >= 7)
+                    {
+                        //alert("From " + SceneThreeList[ToBeClicked] + " To " + SceneThreeList[2]+CirclesID);
+                        $(SceneThreeList[ToBeClicked]).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = 2 ; 
+                        $(SceneThreeList[ToBeClicked] +CirclesID ).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked] + CirclesID).css("border-width","2px");
+                    }
+                else if (  ToBeClicked == 5 || ToBeClicked == 6 )
+                    {
+                        //alert("From " + SceneThreeList[ToBeClicked] + " To " + SceneThreeList[ToBeClicked-1]);
+                        $(SceneThreeList[ToBeClicked]).css("border-style","none");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","0px");
+                        ToBeClicked = ToBeClicked - 1  ; 
+                        $(SceneThreeList[ToBeClicked]).css("border-style","solid");
+                        $(SceneThreeList[ToBeClicked]).css("border-width","2px");
+                    }
+            }
+    }
+});
+ 
+ $(document).ready(function() {
+     
+   var wid = $("#third-level-left-circle1").width();
+   $('#third-level-left-circle1').height(wid);
+   $('#third-level-left-circle1').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle1").width();
+   $('#third-level-right-circle1').height(wid);
+   $('#third-level-right-circle1').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle1").width();
+   $('#third-level-upper-circle1').height(wid);
+   $('#third-level-upper-circle1').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle1").width();
+   $('#third-level-lower-circle1').height(wid);
+   $('#third-level-lower-circle1').css("line-height", wid + "px");
+     //fasl
+     var wid = $("#third-level-left-circle2").width();
+   $('#third-level-left-circle2').height(wid);
+   $('#third-level-left-circle2').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle2").width();
+   $('#third-level-right-circle2').height(wid);
+   $('#third-level-right-circle2').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle2").width();
+   $('#third-level-upper-circle2').height(wid);
+   $('#third-level-upper-circle2').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle2").width();
+   $('#third-level-lower-circle2').height(wid);
+   $('#third-level-lower-circle2').css("line-height", wid + "px");
+     ////////////////////////////////
+     var wid = $("#third-level-left-circle3").width();
+   $('#third-level-left-circle3').height(wid);
+   $('#third-level-left-circle3').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle3").width();
+   $('#third-level-right-circle3').height(wid);
+   $('#third-level-right-circle3').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle3").width();
+   $('#third-level-upper-circle3').height(wid);
+   $('#third-level-upper-circle3').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle3").width();
+   $('#third-level-lower-circle3').height(wid);
+   $('#third-level-lower-circle3').css("line-height", wid + "px");
+     ///////////////////////////
+     var wid = $("#third-level-left-circle4").width();
+   $('#third-level-left-circle4').height(wid);
+   $('#third-level-left-circle4').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle4").width();
+   $('#third-level-right-circle4').height(wid);
+   $('#third-level-right-circle4').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle4").width();
+   $('#third-level-upper-circle4').height(wid);
+   $('#third-level-upper-circle4').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle4").width();
+   $('#third-level-lower-circle4').height(wid);
+   $('#third-level-lower-circle4').css("line-height", wid + "px");
+     /////Meno
+     var wid = $("#third-level-left-circle5").width();
+   $('#third-level-left-circle5').height(wid);
+   $('#third-level-left-circle5').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle5").width();
+   $('#third-level-right-circle5').height(wid);
+   $('#third-level-right-circle5').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle5").width();
+   $('#third-level-upper-circle5').height(wid);
+   $('#third-level-upper-circle5').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle5").width();
+   $('#third-level-lower-circle5').height(wid);
+   $('#third-level-lower-circle5').css("line-height", wid + "px");
+     //fasl
+     var wid = $("#third-level-left-circle6").width();
+   $('#third-level-left-circle6').height(wid);
+   $('#third-level-left-circle6').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle6").width();
+   $('#third-level-right-circle6').height(wid);
+   $('#third-level-right-circle6').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle6").width();
+   $('#third-level-upper-circle6').height(wid);
+   $('#third-level-upper-circle6').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle6").width();
+   $('#third-level-lower-circle6').height(wid);
+   $('#third-level-lower-circle6').css("line-height", wid + "px");
+     ////////////////////////////////
+     var wid = $("#third-level-left-circle7").width();
+   $('#third-level-left-circle7').height(wid);
+   $('#third-level-left-circle7').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle7").width();
+   $('#third-level-right-circle7').height(wid);
+   $('#third-level-right-circle7').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle7").width();
+   $('#third-level-upper-circle7').height(wid);
+   $('#third-level-upper-circle7').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle7").width();
+   $('#third-level-lower-circle7').height(wid);
+   $('#third-level-lower-circle7').css("line-height", wid + "px");
+     ///////////////////////////
+     var wid = $("#third-level-left-circle8").width();
+   $('#third-level-left-circle8').height(wid);
+   $('#third-level-left-circle8').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle8").width();
+   $('#third-level-right-circle8').height(wid);
+   $('#third-level-right-circle8').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle8").width();
+   $('#third-level-upper-circle8').height(wid);
+   $('#third-level-upper-circle8').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle8").width();
+   $('#third-level-lower-circle8').height(wid);
+   $('#third-level-lower-circle8').css("line-height", wid + "px");
+     //here
+     var wid = $("#third-level-left-circle9").width();
+   $('#third-level-left-circle9').height(wid);
+   $('#third-level-left-circle9').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle9").width();
+   $('#third-level-right-circle9').height(wid);
+   $('#third-level-right-circle9').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle9").width();
+   $('#third-level-upper-circle9').height(wid);
+   $('#third-level-upper-circle9').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle9").width();
+   $('#third-level-lower-circle9').height(wid);
+   $('#third-level-lower-circle9').css("line-height", wid + "px");
+     //fasl
+     var wid = $("#third-level-left-circle10").width();
+   $('#third-level-left-circle10').height(wid);
+   $('#third-level-left-circle10').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle10").width();
+   $('#third-level-right-circle10').height(wid);
+   $('#third-level-right-circle10').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle10").width();
+   $('#third-level-upper-circle10').height(wid);
+   $('#third-level-upper-circle10').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle10").width();
+   $('#third-level-lower-circle10').height(wid);
+   $('#third-level-lower-circle10').css("line-height", wid + "px");
+     ////////////////////////////////
+     var wid = $("#third-level-left-circle11").width();
+   $('#third-level-left-circle11').height(wid);
+   $('#third-level-left-circle11').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle11").width();
+   $('#third-level-right-circle11').height(wid);
+   $('#third-level-right-circle11').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle11").width();
+   $('#third-level-upper-circle11').height(wid);
+   $('#third-level-upper-circle11').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle11").width();
+   $('#third-level-lower-circle11').height(wid);
+   $('#third-level-lower-circle11').css("line-height", wid + "px");
+     ///////////////////////////
+     var wid = $("#third-level-left-circle12").width();
+   $('#third-level-left-circle12').height(wid);
+   $('#third-level-left-circle12').css("line-height", wid + "px");
+   var wid = $("#third-level-right-circle12").width();
+   $('#third-level-right-circle12').height(wid);
+   $('#third-level-right-circle12').css("line-height", wid + "px");
+   var wid = $("#third-level-upper-circle12").width();
+   $('#third-level-upper-circle12').height(wid);
+   $('#third-level-upper-circle12').css("line-height", wid + "px");
+   var wid = $("#third-level-lower-circle12").width();
+   $('#third-level-lower-circle12').height(wid);
+   $('#third-level-lower-circle12').css("line-height", wid + "px");
+    
+     
+//    $("#letter1-6").css({position: "absolute"}).css({left: '15px' , top: '13px'});
+//    $("#letter2-6").css({position: "absolute"}).css({left: '19px' , top: '17px'});
+//    $("#letter3-6").css({position: "absolute"}).css({left: '9px' , top: '13px'});
+//    $("#letter4-6").css({position: "absolute"}).css({left: '16px' , top: '11px'}); 
+//    $("#letter1-7").css({position: "absolute"}).css({left: '18px' , top: '13px'});
+//    $("#letter2-7").css({position: "absolute"}).css({left: '18px' , top: '13.5px'});
+//    $("#letter3-7").css({position: "absolute"}).css({left: '17px' , top: '16px'});
+//    $("#letter4-7").css({position: "absolute"}).css({left: '16px' , top: '13.5px'});
+    //$("#letter1-8").css({position: "absolute"}).css({left: '17px' , top: '13px'});
+//    $("#letter2-8").css({position: "absolute"}).css({left: '16px' , top: '15px'});
+//    $("#letter3-8").css({position: "absolute"}).css({left: '17px' , top: '15px'});
+//    $("#letter4-8").css({position: "absolute"}).css({left: '13px' , top: '12px'});
+     
+     var wid = $(".letter").width();
+   $('.letter').height(wid);
+   $('.letter').css("line-height", wid + "px");
+ });
+            </script>
+      </body>
+    </html>
