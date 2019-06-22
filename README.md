@@ -7,7 +7,7 @@ The frontend is written in ElectronJS, HTML , CSS & JavaScript .
 
 Here is sample of the visualized signals processed 
 
-![alt text](https://ibb.co/0sL8sbT)
+![alt text](https://i.ibb.co/NTqQTB5/FINALELMFROD.jpg)
 
 ![alt text](https://ibb.co/mXBXV5b)
 
