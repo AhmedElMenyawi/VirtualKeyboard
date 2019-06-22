@@ -5,16 +5,13 @@ and our virtual world .
 The backend and the ML are written in Python 
 The frontend is written in ElectronJS, HTML , CSS & JavaScript .
 
-Here is sample of the visualized signals processed 
+# Here is sample of the visualized signals processed 
 
 ![alt text](https://i.ibb.co/NTqQTB5/FINALELMFROD.jpg)
 
 ![alt text](https://i.ibb.co/1dndtG7/TFTKRY.jpg)
 
-The User Interface 
-![alt text](https://i.ibb.co/sqtdQsp/Screenshot-533.png)
-
-![alt text](https://i.ibb.co/gtCrcWM/Screenshot-535.png)
+# The User Interface 
 
 ![alt text](https://i.ibb.co/sqtdQsp/Screenshot-533.png)
 
