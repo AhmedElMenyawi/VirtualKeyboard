@@ -9,19 +9,15 @@ Here is sample of the visualized signals processed
 
 ![alt text](https://i.ibb.co/NTqQTB5/FINALELMFROD.jpg)
 
-![alt text](https://ibb.co/mXBXV5b)
+![alt text](https://i.ibb.co/1dndtG7/TFTKRY.jpg)
 
 The User Interface 
-![alt text](https://ibb.co/jDHPG39)
+![alt text](https://i.ibb.co/sqtdQsp/Screenshot-533.png)
 
-![alt text](https://ibb.co/Dwn1jMD)
+![alt text](https://i.ibb.co/gtCrcWM/Screenshot-535.png)
 
-![alt text](https://ibb.co/jDHPG39)
+![alt text](https://i.ibb.co/sqtdQsp/Screenshot-533.png)
 
-![alt text](https://ibb.co/jDHPG39)
+![alt text](https://i.ibb.co/gtCrcWM/Screenshot-535.png)
 
-![alt text](https://ibb.co/jDHPG39)
-
-![alt text](https://ibb.co/jDHPG39)
-
-![alt text](https://ibb.co/jDHPG39)
+![alt text](https://i.ibb.co/x2NGfpy/Screenshot-536.png)
